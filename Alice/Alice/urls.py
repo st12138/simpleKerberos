@@ -19,7 +19,7 @@ from django.http import HttpResponse,JsonResponse
 
 def index(request):
 
-    response = HttpResponse("Hello, world. You're at the site index.You can get your tgt or sgt")
+    response = HttpResponse("Hello, world. You're at the site index.You can get your tgt or sgt by url action/")
     return response
 
 urlpatterns = [

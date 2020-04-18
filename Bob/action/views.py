@@ -27,12 +27,6 @@ def connect(request):
     print(sgt)
     print(Auth)
     if sgt["client_id"] == Auth["client_id"] and sgt["client_address"] == Auth["client_address"]:
-        """
-        reqdata = {
-            "client_id":Auth["client_id"],
-            "connection_situation":"welcome"
-        }
-        """
-        return HttpResponse("welcome %s"%(Auth["client_id"]))
+        return HttpResponse("Welcome %s , This is Bob"%(Auth["client_id"]))
     else:
         return HttpResponse("Access Denied : %s"%(Auth["client_id"]))

@@ -1,3 +1,4 @@
+import random
 def encrypt(key,plain):
     offset =  key%26
     cipher = ""
@@ -41,11 +42,11 @@ def decrypt(key,cipher):
 
 
 def main():
-    key = 12345
-    plain="4165346237412985438643138395237599"
-    inkey=str(key)
-    chiper=encrypt(key,plain)
-    print(chiper)
-
+    plain = "123456"
+    #c = plain[0]
+    #print(c.isdigit())
+    key = 123456
+    a= encrypt(key,plain)
+    print(a)
 if __name__=="__main__":
     main()
